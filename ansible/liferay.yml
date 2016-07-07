@@ -1,0 +1,14 @@
+---
+
+- hosts: all
+  become: yes
+  gather_facts: yes
+
+  vars:
+    mysql_user_home: /home/vagrant
+    liferay_datasource: mysql
+    liferay_enable_remote_debug: true
+  roles:
+    - williamyeh.oracle-java
+    - geerlingguy.mysql
+    - ansible-liferay

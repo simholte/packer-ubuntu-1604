@@ -1,0 +1,7 @@
+---
+
+- src: williamyeh.oracle-java
+- src: geerlingguy.mysql
+- src: geerlingguy.packer-debian
+- src: geerlingguy.nfs
+- src: https://github.com/simholte/ansible-liferay

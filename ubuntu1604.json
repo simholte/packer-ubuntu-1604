@@ -19,6 +19,15 @@
       ]
     },
     {
+      "type": "ansible-local",
+      "playbook_file": "ansible/liferay.yml",
+      "role_paths": [
+        "/etc/ansible/roles/geerlingguy.mysql",
+        "/etc/ansible/roles/williamyeh.oracle-java",
+        "/etc/ansible/roles/ansible-liferay"
+      ]
+    },
+    {
       "type": "shell",
       "execute_command": "echo 'vagrant' | {{.Vars}} sudo -S -E bash '{{.Path}}'",
       "script": "scripts/cleanup.sh"
